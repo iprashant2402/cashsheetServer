@@ -40,7 +40,7 @@ var userSchema = new mongoose.Schema({
       name: this.name,
       userType: this.userType,
       exp: parseInt(expiry.getTime() / 1000),
-    }, "MONEY_LAUNDERING"); // DO NOT KEEP YOUR SECRET IN THE CODE!
+    }, "MONEY_LAUNDERING"); // TO DO: Remove secret from code - PS
   };
 
   module.exports = mongoose.model('UserModel', userSchema);

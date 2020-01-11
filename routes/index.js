@@ -29,10 +29,10 @@ router.post('/closeSheet',function(req,res,next){
       if(results.length>0){
         let summation = 0;
         for(var i=0;i<results.length;i++){
-          if(results[i].transactionType==="income"){
+          if(results[i].transactionType==="income" && results[i].mode){
             summation = summation + results[i].amount;
           }
-          if(results[i].transactionType==="refund" || results[i].transactionType==="expense"){
+          if((results[i].transactionType==="refund" || results[i].transactionType==="expense") && results[i].mode){
             summation = summation - results[i].amount;
           }
         }
