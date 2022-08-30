@@ -14,7 +14,7 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "jsonwebtoken": "^8.5.1",
-    "moment-timezone": "^0.5.27",
+    "moment-timezone": "^0.5.35",
     "mongoose": "^5.7.12",
     "morgan": "~1.9.1",
     "passport": "^0.4.0",
